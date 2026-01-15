@@ -30,8 +30,8 @@ namespace Vet_Clinic
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalsForm));
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(AnimalsForm));
             labelTitle = new Label();
             imageListViewPets = new ListView();
             imageListPets = new ImageList(components);
@@ -83,13 +83,15 @@ namespace Vet_Clinic
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PaleGreen;
+            BackColor = Color.Lime;
             ClientSize = new Size(984, 541);
             Controls.Add(AddPetButton);
             Controls.Add(imageListViewPets);
             Controls.Add(labelTitle);
             Name = "AnimalsForm";
             Text = "Vet Clinic";
+
+            Load += OnLoad;
             ResumeLayout(false);
             PerformLayout();
         }

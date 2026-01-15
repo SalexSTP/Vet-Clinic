@@ -60,7 +60,7 @@ namespace Vet_Clinic
             catRadioButton.AutoSize = true;
             catRadioButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             catRadioButton.ForeColor = Color.White;
-            catRadioButton.Location = new Point(220, 134);
+            catRadioButton.Location = new Point(192, 134);
             catRadioButton.Name = "catRadioButton";
             catRadioButton.Size = new Size(51, 25);
             catRadioButton.TabIndex = 0;
@@ -73,7 +73,7 @@ namespace Vet_Clinic
             dogRadioButton.AutoSize = true;
             dogRadioButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             dogRadioButton.ForeColor = Color.White;
-            dogRadioButton.Location = new Point(347, 134);
+            dogRadioButton.Location = new Point(319, 134);
             dogRadioButton.Name = "dogRadioButton";
             dogRadioButton.Size = new Size(57, 25);
             dogRadioButton.TabIndex = 0;
@@ -86,7 +86,7 @@ namespace Vet_Clinic
             nameLabel.AutoSize = true;
             nameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             nameLabel.ForeColor = Color.White;
-            nameLabel.Location = new Point(117, 183);
+            nameLabel.Location = new Point(89, 183);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(52, 21);
             nameLabel.TabIndex = 0;
@@ -97,7 +97,7 @@ namespace Vet_Clinic
             birthdayLabel.AutoSize = true;
             birthdayLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             birthdayLabel.ForeColor = Color.White;
-            birthdayLabel.Location = new Point(96, 239);
+            birthdayLabel.Location = new Point(68, 239);
             birthdayLabel.Name = "birthdayLabel";
             birthdayLabel.Size = new Size(73, 21);
             birthdayLabel.TabIndex = 0;
@@ -108,7 +108,7 @@ namespace Vet_Clinic
             breedLabel.AutoSize = true;
             breedLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             breedLabel.ForeColor = Color.White;
-            breedLabel.Location = new Point(119, 295);
+            breedLabel.Location = new Point(91, 295);
             breedLabel.Name = "breedLabel";
             breedLabel.Size = new Size(50, 21);
             breedLabel.TabIndex = 0;
@@ -119,7 +119,7 @@ namespace Vet_Clinic
             medicalHistoryLabel.AutoSize = true;
             medicalHistoryLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             medicalHistoryLabel.ForeColor = Color.White;
-            medicalHistoryLabel.Location = new Point(51, 354);
+            medicalHistoryLabel.Location = new Point(23, 354);
             medicalHistoryLabel.Name = "medicalHistoryLabel";
             medicalHistoryLabel.Size = new Size(118, 21);
             medicalHistoryLabel.TabIndex = 0;
@@ -127,7 +127,7 @@ namespace Vet_Clinic
             // 
             // nameTextBox
             // 
-            nameTextBox.Location = new Point(175, 183);
+            nameTextBox.Location = new Point(147, 183);
             nameTextBox.MinimumSize = new Size(310, 27);
             nameTextBox.Name = "nameTextBox";
             nameTextBox.Size = new Size(310, 27);
@@ -135,7 +135,7 @@ namespace Vet_Clinic
             // 
             // breedTextBox
             // 
-            breedTextBox.Location = new Point(175, 295);
+            breedTextBox.Location = new Point(147, 295);
             breedTextBox.MinimumSize = new Size(310, 27);
             breedTextBox.Name = "breedTextBox";
             breedTextBox.Size = new Size(310, 27);
@@ -143,7 +143,7 @@ namespace Vet_Clinic
             // 
             // medicalHistoryTextBox
             // 
-            medicalHistoryTextBox.Location = new Point(175, 354);
+            medicalHistoryTextBox.Location = new Point(147, 354);
             medicalHistoryTextBox.MinimumSize = new Size(310, 60);
             medicalHistoryTextBox.Name = "medicalHistoryTextBox";
             medicalHistoryTextBox.Size = new Size(310, 60);
@@ -154,7 +154,7 @@ namespace Vet_Clinic
             weightLabel.AutoSize = true;
             weightLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             weightLabel.ForeColor = Color.White;
-            weightLabel.Location = new Point(586, 183);
+            weightLabel.Location = new Point(558, 183);
             weightLabel.Name = "weightLabel";
             weightLabel.Size = new Size(59, 21);
             weightLabel.TabIndex = 0;
@@ -165,7 +165,7 @@ namespace Vet_Clinic
             colorLabel.AutoSize = true;
             colorLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             colorLabel.ForeColor = Color.White;
-            colorLabel.Location = new Point(597, 239);
+            colorLabel.Location = new Point(569, 239);
             colorLabel.Name = "colorLabel";
             colorLabel.Size = new Size(48, 21);
             colorLabel.TabIndex = 0;
@@ -176,7 +176,7 @@ namespace Vet_Clinic
             imageLabel.AutoSize = true;
             imageLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             imageLabel.ForeColor = Color.White;
-            imageLabel.Location = new Point(592, 295);
+            imageLabel.Location = new Point(564, 295);
             imageLabel.Name = "imageLabel";
             imageLabel.Size = new Size(53, 21);
             imageLabel.TabIndex = 0;
@@ -187,7 +187,7 @@ namespace Vet_Clinic
             favoriteToyLabel.AutoSize = true;
             favoriteToyLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             favoriteToyLabel.ForeColor = Color.White;
-            favoriteToyLabel.Location = new Point(553, 354);
+            favoriteToyLabel.Location = new Point(525, 354);
             favoriteToyLabel.Name = "favoriteToyLabel";
             favoriteToyLabel.Size = new Size(92, 21);
             favoriteToyLabel.TabIndex = 0;
@@ -195,7 +195,7 @@ namespace Vet_Clinic
             // 
             // weightTextBox
             // 
-            weightTextBox.Location = new Point(651, 183);
+            weightTextBox.Location = new Point(623, 183);
             weightTextBox.MinimumSize = new Size(310, 27);
             weightTextBox.Name = "weightTextBox";
             weightTextBox.Size = new Size(310, 27);
@@ -203,7 +203,7 @@ namespace Vet_Clinic
             // 
             // colorTextBox
             // 
-            colorTextBox.Location = new Point(651, 239);
+            colorTextBox.Location = new Point(623, 239);
             colorTextBox.MinimumSize = new Size(310, 27);
             colorTextBox.Name = "colorTextBox";
             colorTextBox.Size = new Size(310, 27);
@@ -211,7 +211,7 @@ namespace Vet_Clinic
             // 
             // imageTextBox
             // 
-            imageTextBox.Location = new Point(651, 295);
+            imageTextBox.Location = new Point(623, 295);
             imageTextBox.MinimumSize = new Size(310, 27);
             imageTextBox.Name = "imageTextBox";
             imageTextBox.Size = new Size(310, 27);
@@ -219,7 +219,7 @@ namespace Vet_Clinic
             // 
             // favoriteToyTextBox
             // 
-            favoriteToyTextBox.Location = new Point(651, 354);
+            favoriteToyTextBox.Location = new Point(623, 354);
             favoriteToyTextBox.MinimumSize = new Size(310, 27);
             favoriteToyTextBox.Name = "favoriteToyTextBox";
             favoriteToyTextBox.Size = new Size(310, 27);
@@ -227,7 +227,7 @@ namespace Vet_Clinic
             // 
             // birthdayPicker
             // 
-            birthdayPicker.Location = new Point(175, 239);
+            birthdayPicker.Location = new Point(147, 239);
             birthdayPicker.Name = "birthdayPicker";
             birthdayPicker.Size = new Size(310, 23);
             birthdayPicker.TabIndex = 2;
@@ -236,7 +236,7 @@ namespace Vet_Clinic
             // 
             addButton.BackColor = Color.FromArgb(20, 54, 66);
             addButton.ForeColor = Color.White;
-            addButton.Location = new Point(754, 418);
+            addButton.Location = new Point(726, 418);
             addButton.Name = "addButton";
             addButton.Size = new Size(99, 48);
             addButton.TabIndex = 9;
@@ -247,7 +247,7 @@ namespace Vet_Clinic
             // 
             nameInfoLabel.AutoSize = true;
             nameInfoLabel.ForeColor = Color.Red;
-            nameInfoLabel.Location = new Point(175, 213);
+            nameInfoLabel.Location = new Point(147, 213);
             nameInfoLabel.Name = "nameInfoLabel";
             nameInfoLabel.Size = new Size(0, 15);
             nameInfoLabel.TabIndex = 10;
@@ -256,7 +256,7 @@ namespace Vet_Clinic
             // 
             breedInfoLabel.AutoSize = true;
             breedInfoLabel.ForeColor = Color.Red;
-            breedInfoLabel.Location = new Point(175, 325);
+            breedInfoLabel.Location = new Point(147, 325);
             breedInfoLabel.Name = "breedInfoLabel";
             breedInfoLabel.Size = new Size(0, 15);
             breedInfoLabel.TabIndex = 11;
@@ -265,7 +265,7 @@ namespace Vet_Clinic
             // 
             medicalHistoryInfoLabel.AutoSize = true;
             medicalHistoryInfoLabel.ForeColor = Color.Red;
-            medicalHistoryInfoLabel.Location = new Point(175, 418);
+            medicalHistoryInfoLabel.Location = new Point(147, 418);
             medicalHistoryInfoLabel.Name = "medicalHistoryInfoLabel";
             medicalHistoryInfoLabel.Size = new Size(0, 15);
             medicalHistoryInfoLabel.TabIndex = 12;
@@ -274,7 +274,7 @@ namespace Vet_Clinic
             // 
             weightInfoLabel.AutoSize = true;
             weightInfoLabel.ForeColor = Color.Red;
-            weightInfoLabel.Location = new Point(651, 213);
+            weightInfoLabel.Location = new Point(623, 213);
             weightInfoLabel.Name = "weightInfoLabel";
             weightInfoLabel.Size = new Size(0, 15);
             weightInfoLabel.TabIndex = 13;
@@ -283,7 +283,7 @@ namespace Vet_Clinic
             // 
             colorInfoLabel.AutoSize = true;
             colorInfoLabel.ForeColor = Color.Red;
-            colorInfoLabel.Location = new Point(651, 269);
+            colorInfoLabel.Location = new Point(623, 269);
             colorInfoLabel.Name = "colorInfoLabel";
             colorInfoLabel.Size = new Size(0, 15);
             colorInfoLabel.TabIndex = 14;
@@ -292,7 +292,7 @@ namespace Vet_Clinic
             // 
             imageInfoLabel.AutoSize = true;
             imageInfoLabel.ForeColor = Color.Red;
-            imageInfoLabel.Location = new Point(651, 325);
+            imageInfoLabel.Location = new Point(623, 325);
             imageInfoLabel.Name = "imageInfoLabel";
             imageInfoLabel.Size = new Size(0, 15);
             imageInfoLabel.TabIndex = 15;
@@ -301,14 +301,14 @@ namespace Vet_Clinic
             // 
             favoriteToyInfoLabel.AutoSize = true;
             favoriteToyInfoLabel.ForeColor = Color.Red;
-            favoriteToyInfoLabel.Location = new Point(651, 384);
+            favoriteToyInfoLabel.Location = new Point(623, 384);
             favoriteToyInfoLabel.Name = "favoriteToyInfoLabel";
             favoriteToyInfoLabel.Size = new Size(0, 15);
             favoriteToyInfoLabel.TabIndex = 16;
             // 
             // NewPetForm
             // 
-            BackColor = Color.PaleGreen;
+            BackColor = Color.Lime;
             ClientSize = new Size(984, 541);
             Controls.Add(favoriteToyInfoLabel);
             Controls.Add(imageInfoLabel);
