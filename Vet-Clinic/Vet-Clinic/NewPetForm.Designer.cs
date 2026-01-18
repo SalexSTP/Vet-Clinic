@@ -67,6 +67,7 @@ namespace Vet_Clinic
             catRadioButton.TabStop = true;
             catRadioButton.Text = "Cat";
             catRadioButton.UseVisualStyleBackColor = true;
+            catRadioButton.CheckedChanged += CatRadioButton_CheckedChanged;
             // 
             // dogRadioButton
             // 
@@ -80,6 +81,7 @@ namespace Vet_Clinic
             dogRadioButton.TabStop = true;
             dogRadioButton.Text = "Dog";
             dogRadioButton.UseVisualStyleBackColor = true;
+            dogRadioButton.CheckedChanged += RadioButtonDog_CheckedChanged;
             // 
             // nameLabel
             // 
@@ -216,6 +218,7 @@ namespace Vet_Clinic
             imageTextBox.Name = "imageTextBox";
             imageTextBox.Size = new Size(310, 27);
             imageTextBox.TabIndex = 7;
+            imageTextBox.MouseDown += TextBoxPhoto_MouseDown;
             // 
             // favoriteToyTextBox
             // 
@@ -242,6 +245,7 @@ namespace Vet_Clinic
             addButton.TabIndex = 9;
             addButton.Text = "Add";
             addButton.UseVisualStyleBackColor = false;
+            addButton.Click += AddNewPetButton_Click;
             // 
             // nameInfoLabel
             // 
@@ -249,8 +253,9 @@ namespace Vet_Clinic
             nameInfoLabel.ForeColor = Color.Red;
             nameInfoLabel.Location = new Point(147, 213);
             nameInfoLabel.Name = "nameInfoLabel";
-            nameInfoLabel.Size = new Size(0, 15);
+            nameInfoLabel.Size = new Size(230, 15);
             nameInfoLabel.TabIndex = 10;
+            nameInfoLabel.Text = "Name should be at least 3 characters long!";
             // 
             // breedInfoLabel
             // 
@@ -258,8 +263,9 @@ namespace Vet_Clinic
             breedInfoLabel.ForeColor = Color.Red;
             breedInfoLabel.Location = new Point(147, 325);
             breedInfoLabel.Name = "breedInfoLabel";
-            breedInfoLabel.Size = new Size(0, 15);
+            breedInfoLabel.Size = new Size(228, 15);
             breedInfoLabel.TabIndex = 11;
+            breedInfoLabel.Text = "Breed should be at least 5 characters long!";
             // 
             // medicalHistoryInfoLabel
             // 
@@ -267,8 +273,9 @@ namespace Vet_Clinic
             medicalHistoryInfoLabel.ForeColor = Color.Red;
             medicalHistoryInfoLabel.Location = new Point(147, 418);
             medicalHistoryInfoLabel.Name = "medicalHistoryInfoLabel";
-            medicalHistoryInfoLabel.Size = new Size(0, 15);
+            medicalHistoryInfoLabel.Size = new Size(287, 15);
             medicalHistoryInfoLabel.TabIndex = 12;
+            medicalHistoryInfoLabel.Text = "Medical History should be at least 10 characters long!";
             // 
             // weightInfoLabel
             // 
@@ -276,8 +283,9 @@ namespace Vet_Clinic
             weightInfoLabel.ForeColor = Color.Red;
             weightInfoLabel.Location = new Point(623, 213);
             weightInfoLabel.Name = "weightInfoLabel";
-            weightInfoLabel.Size = new Size(0, 15);
+            weightInfoLabel.Size = new Size(97, 15);
             weightInfoLabel.TabIndex = 13;
+            weightInfoLabel.Text = "Weight is invalid!";
             // 
             // colorInfoLabel
             // 
@@ -285,8 +293,9 @@ namespace Vet_Clinic
             colorInfoLabel.ForeColor = Color.Red;
             colorInfoLabel.Location = new Point(623, 269);
             colorInfoLabel.Name = "colorInfoLabel";
-            colorInfoLabel.Size = new Size(0, 15);
+            colorInfoLabel.Size = new Size(97, 15);
             colorInfoLabel.TabIndex = 14;
+            colorInfoLabel.Text = "Color is required!";
             // 
             // imageInfoLabel
             // 
@@ -294,8 +303,9 @@ namespace Vet_Clinic
             imageInfoLabel.ForeColor = Color.Red;
             imageInfoLabel.Location = new Point(623, 325);
             imageInfoLabel.Name = "imageInfoLabel";
-            imageInfoLabel.Size = new Size(0, 15);
+            imageInfoLabel.Size = new Size(101, 15);
             imageInfoLabel.TabIndex = 15;
+            imageInfoLabel.Text = "Image is required!";
             // 
             // favoriteToyInfoLabel
             // 
@@ -303,8 +313,9 @@ namespace Vet_Clinic
             favoriteToyInfoLabel.ForeColor = Color.Red;
             favoriteToyInfoLabel.Location = new Point(623, 384);
             favoriteToyInfoLabel.Name = "favoriteToyInfoLabel";
-            favoriteToyInfoLabel.Size = new Size(0, 15);
+            favoriteToyInfoLabel.Size = new Size(130, 15);
             favoriteToyInfoLabel.TabIndex = 16;
+            favoriteToyInfoLabel.Text = "Favorite toy is required!";
             // 
             // NewPetForm
             // 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelTitle = new Label();
+            petNameLabel = new Label();
             favoriteToyLabel = new Label();
             statusLabel = new Label();
             colorLabel = new Label();
@@ -37,7 +37,7 @@
             breedLabel = new Label();
             birthdayLabel = new Label();
             typeLabel = new Label();
-            addButton = new Button();
+            adoptButton = new Button();
             birthdayPicker = new DateTimePicker();
             statusTextBox = new TextBox();
             favoriteTextBox = new TextBox();
@@ -46,19 +46,21 @@
             medicalHistoryTextBox = new TextBox();
             breedTextBox = new TextBox();
             typeTextBox = new TextBox();
+            petImagePictureBox = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)petImagePictureBox).BeginInit();
             SuspendLayout();
             // 
-            // labelTitle
+            // petNameLabel
             // 
-            labelTitle.Anchor = AnchorStyles.Top;
-            labelTitle.AutoSize = true;
-            labelTitle.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTitle.ForeColor = Color.White;
-            labelTitle.Location = new Point(390, 48);
-            labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(224, 65);
-            labelTitle.TabIndex = 1;
-            labelTitle.Text = "Vet Clinic";
+            petNameLabel.Anchor = AnchorStyles.Top;
+            petNameLabel.AutoSize = true;
+            petNameLabel.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            petNameLabel.ForeColor = Color.White;
+            petNameLabel.Location = new Point(390, 48);
+            petNameLabel.Name = "petNameLabel";
+            petNameLabel.Size = new Size(255, 65);
+            petNameLabel.TabIndex = 1;
+            petNameLabel.Text = "Pet's name";
             // 
             // favoriteToyLabel
             // 
@@ -142,22 +144,23 @@
             typeLabel.AutoSize = true;
             typeLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             typeLabel.ForeColor = Color.White;
-            typeLabel.Location = new Point(95, 185);
+            typeLabel.Location = new Point(95, 179);
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new Size(42, 21);
             typeLabel.TabIndex = 9;
             typeLabel.Text = "Type";
             // 
-            // addButton
+            // adoptButton
             // 
-            addButton.BackColor = Color.FromArgb(20, 54, 66);
-            addButton.ForeColor = Color.White;
-            addButton.Location = new Point(722, 414);
-            addButton.Name = "addButton";
-            addButton.Size = new Size(99, 48);
-            addButton.TabIndex = 18;
-            addButton.Text = "Add";
-            addButton.UseVisualStyleBackColor = false;
+            adoptButton.BackColor = Color.FromArgb(20, 54, 66);
+            adoptButton.ForeColor = Color.White;
+            adoptButton.Location = new Point(722, 414);
+            adoptButton.Name = "adoptButton";
+            adoptButton.Size = new Size(99, 48);
+            adoptButton.TabIndex = 18;
+            adoptButton.Text = "Adopt";
+            adoptButton.UseVisualStyleBackColor = false;
+            adoptButton.Click += AdoptPetButton_Click;
             // 
             // birthdayPicker
             // 
@@ -222,13 +225,22 @@
             typeTextBox.Size = new Size(310, 27);
             typeTextBox.TabIndex = 10;
             // 
+            // petImagePictureBox
+            // 
+            petImagePictureBox.Location = new Point(143, 34);
+            petImagePictureBox.Name = "petImagePictureBox";
+            petImagePictureBox.Size = new Size(190, 106);
+            petImagePictureBox.TabIndex = 19;
+            petImagePictureBox.TabStop = false;
+            // 
             // PetDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lime;
             ClientSize = new Size(984, 541);
-            Controls.Add(addButton);
+            Controls.Add(petImagePictureBox);
+            Controls.Add(adoptButton);
             Controls.Add(birthdayPicker);
             Controls.Add(statusTextBox);
             Controls.Add(favoriteTextBox);
@@ -245,16 +257,18 @@
             Controls.Add(breedLabel);
             Controls.Add(birthdayLabel);
             Controls.Add(typeLabel);
-            Controls.Add(labelTitle);
+            Controls.Add(petNameLabel);
             Name = "PetDetailForm";
             Text = "PetDetailForm";
+            Load += FillPetInfo;
+            ((System.ComponentModel.ISupportInitialize)petImagePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label labelTitle;
+        private Label petNameLabel;
         private Label favoriteToyLabel;
         private Label statusLabel;
         private Label colorLabel;
@@ -263,7 +277,7 @@
         private Label breedLabel;
         private Label birthdayLabel;
         private Label typeLabel;
-        private Button addButton;
+        private Button adoptButton;
         private DateTimePicker birthdayPicker;
         private TextBox statusTextBox;
         private TextBox favoriteTextBox;
@@ -272,5 +286,6 @@
         private TextBox medicalHistoryTextBox;
         private TextBox breedTextBox;
         private TextBox typeTextBox;
+        private PictureBox petImagePictureBox;
     }
 }

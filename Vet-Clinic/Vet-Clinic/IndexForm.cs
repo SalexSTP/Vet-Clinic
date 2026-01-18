@@ -3,9 +3,9 @@ using Vet_Clinic.Data.AnimalModels;
 
 namespace Vet_Clinic
 {
-    public partial class AnimalsForm : Form
+    public partial class IndexForm : Form
     {
-        public AnimalsForm()
+        public IndexForm()
         {
             InitializeComponent();
         }
@@ -25,10 +25,45 @@ namespace Vet_Clinic
         {
             this.imageListViewPets.Clear();
 
+            for (int i = 0; i < this.pets.Count; i++)
+            {
+                if (this.pets[i].Status == Status.Adopted)
+                {
+                    this.pets.RemoveAt(i);
+                    i--;
+                }
+            }
+
             foreach (var pet in pets)
             {
                 this.imageListViewPets.Items.Add(pet.Name, pet.GetType() == typeof(Cat) ? 0 : 1);
             }
+        }
+
+        private void ListViewPetsMouseClick(object sender, MouseEventArgs e)
+        {
+            IAnimal selectedPet = pets[this.imageListViewPets.SelectedItems[0].Index];
+
+            if (selectedPet != null)
+            {
+                using PetDetailForm petDetailForm = new(selectedPet);
+                petDetailForm.ShowDialog();
+            }
+
+            LoadAllPets();
+        }
+
+        private void ButtonAddNewPetClick(object sender, EventArgs e)
+        {
+            using (NewPetForm newPetForm = new())
+            {
+                if (newPetForm.ShowDialog() == DialogResult.OK)
+                {
+                    this.pets.Add(newPetForm.Animal);
+                }
+            }
+
+            LoadAllPets();
         }
     }
 }

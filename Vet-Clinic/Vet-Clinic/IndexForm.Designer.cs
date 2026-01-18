@@ -2,7 +2,7 @@
 
 namespace Vet_Clinic
 {
-    partial class AnimalsForm
+    partial class IndexForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,7 @@ namespace Vet_Clinic
         private void InitializeComponent()
         {
             components = new Container();
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(AnimalsForm));
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(IndexForm));
             labelTitle = new Label();
             imageListViewPets = new ListView();
             imageListPets = new ImageList(components);
@@ -59,6 +59,7 @@ namespace Vet_Clinic
             imageListViewPets.SmallImageList = imageListPets;
             imageListViewPets.TabIndex = 1;
             imageListViewPets.UseCompatibleStateImageBehavior = false;
+            imageListViewPets.MouseClick += ListViewPetsMouseClick;
             // 
             // imageListPets
             // 
@@ -78,6 +79,7 @@ namespace Vet_Clinic
             AddPetButton.TabIndex = 2;
             AddPetButton.Text = "Add New Pet";
             AddPetButton.UseVisualStyleBackColor = false;
+            AddPetButton.Click += ButtonAddNewPetClick;
             // 
             // AnimalsForm
             // 
@@ -90,7 +92,6 @@ namespace Vet_Clinic
             Controls.Add(labelTitle);
             Name = "AnimalsForm";
             Text = "Vet Clinic";
-
             Load += OnLoad;
             ResumeLayout(false);
             PerformLayout();
