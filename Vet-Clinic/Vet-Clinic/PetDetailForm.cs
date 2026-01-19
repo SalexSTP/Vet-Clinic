@@ -37,13 +37,24 @@ namespace Vet_Clinic
                 this.favoriteToyLabel.Visible = false;
             }
 
+            this.typeTextBox.Enabled = false;
+            this.breedTextBox.Enabled = false;
+            this.colorTextBox.Enabled = false;
+            this.weightTextBox.Enabled = false;
+            this.medicalHistoryTextBox.Enabled = false;
+            this.statusTextBox.Enabled = false;
+            this.birthdayPicker.Enabled = false;
+            this.favoriteTextBox.Enabled = false;
+
             this.adoptButton.Enabled = this.pet.Status != Status.Adopted;
         }
 
         private void LoadPetImage()
         {
             if (string.IsNullOrEmpty(pet.Image) || !File.Exists(pet.Image))
+            {
                 return;
+            }
 
             using var fs = new FileStream(pet.Image, FileMode.Open, FileAccess.Read);
             using var img = Image.FromStream(fs);

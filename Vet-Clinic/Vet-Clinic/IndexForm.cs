@@ -12,8 +12,14 @@ namespace Vet_Clinic
 
         private readonly List<IAnimal> pets = new()
         {
-            new Cat("Fluffy", new DateTime(2018, 5, 15), "Persian", "Regular checkups", 4.5, "Golden", "Feather wand"),
-            new Dog("Buddy", new DateTime(2016, 8, 20), "Golden Retriever", "Vaccinated", 25.5, "Golden"),
+            new Cat("Fluffy", new DateTime(2018, 5, 15), "Persian", "Regular checkups", 4.5, "Golden", "Feather wand")
+            {
+                Image = @"C:\Users\User1\Downloads\icons8-cat-64.png"
+            },
+            new Dog("Buddy", new DateTime(2016, 8, 20), "Golden Retriever", "Vaccinated", 25.5, "Golden")
+            {
+                Image = @"C:\Users\User1\Downloads\icons8-dog-100.png"
+            },
         };
 
         private void OnLoad(object sender, EventArgs e)
